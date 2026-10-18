@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# A-Care Service
 
-## Getting Started
+เว็บภาษาไทยสำหรับบริษัท เอ-แคร์ เซอร์วิส จำกัด ใช้ Next.js App Router รองรับเดสก์ท็อปและมือถือ โทนขาว ฟ้า แดง
 
-First, run the development server:
+## เริ่มใช้งาน
 
-```bash
+```sh
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+เปิด http://localhost:3000 หากพอร์ตนี้ถูกใช้งาน ให้รัน `npm run dev -- --port 3001`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## หน้าเว็บไซต์
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `/` — Landing page แบบเลื่อนยาว: แบนเนอร์ภาพใหญ่ ข้อมูลบริษัท จุดเด่น ประเภทระบบ บริการ ผลงาน และช่องทางติดต่อ
+- `/about` — ข้อมูลบริษัท บริการ และแกลเลอรีกรองประเภทผลงาน พร้อมเปิดดูภาพใหญ่
+- `/contact` — เบอร์โทร อีเมล ที่อยู่ ช่องทาง Facebook และ LINE และแบบฟอร์มเตรียมอีเมล
 
-## Learn More
+## ข้อมูลและภาพ
 
-To learn more about Next.js, take a look at the following resources:
+ข้อมูลบริษัทและภาพผลงานมาจากไฟล์ `01_AcareService_CompanyProfile_EnglishVersion.pdf` ที่ผู้ใช้ให้มา ภาพถูกแยกเป็น WebP ใน `public/images` โดยความคมชัดขึ้นอยู่กับภาพต้นฉบับใน PDF
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+ข้อมูลติดต่อ รายการบริการ และผลงานแก้ไขได้ที่ `app/lib/content.ts`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+เอกสารไม่ระบุ Facebook, LINE และเวลาทำการ จึงแสดงเป็นข้อความตัวอย่าง โดยยังไม่เชื่อมบัญชีสมมติ สามารถใส่ URL จริงใน `company.facebookUrl` และ `company.lineUrl` เพื่อเปิดปุ่มติดต่อได้ เวลาทำการแก้ไขที่ `app/contact/page.tsx`
 
-## Deploy on Vercel
+แบบฟอร์มติดต่อใช้ `mailto:` เพื่อเปิดแอปอีเมลของผู้ใช้พร้อมรายละเอียด และต้องกดส่งในแอปอีเมลอีกครั้ง เว็บไซต์ยังไม่มีระบบรับหรือส่งข้อความบนเซิร์ฟเวอร์
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## ตรวจโค้ดและสร้างเวอร์ชันใช้งานจริง
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```sh
+npm run lint
+npm run build
+npm start
+```
