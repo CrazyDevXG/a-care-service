@@ -10,6 +10,7 @@ export const company = {
 };
 
 const photo = (file: string) => `/images/${file}`;
+const work = (file: string) => `/images/works/${file}`;
 
 export const photos = {
   panyaHall: photo("mg70172.png"),
@@ -22,7 +23,7 @@ export const photos = {
   officeClean: photo("LINE_ALBUM_ล้างแอร์ สำนักงาน อาคารไพโรจน์กิจจา บา2.jpg"),
   officeCheck: photo("LINE_ALBUM_ล้างแอร์ สำนักงาน อาคารไพโรจน์กิจจา บา.jpg"),
   peaOffice: photo("LINE_ALBUM_งานซ่อม-การไฟฟ้าส่วนภูมิภาค_261009_75.jpg"),
-  peaCover: photo("LINE_ALBUM_งานซ่อม-การไฟฟ้าส่วนภูมิภาค_261009_12.jpg"),
+  peaCover: work("LINE_ALBUM_งานซ่อม-การไฟฟ้าส่วนภูมิภาค_261009_12.jpg"),
   peaRepair: photo("mg70170.png"),
   peaUnits: photo("LINE_ALBUM_งานซ่อม-การไฟฟ้าส่วนภูมิภาค_261009_77.jpg"),
   factoryJob: photo("LINE_ALBUM_งานรื้อถอนติดตั้งแอร์ โรงงาน จ.ปทุมธาน5.jpg"),
@@ -104,8 +105,6 @@ export const brands = [
   { name: "Sharp", src: "/images/brands/sharp.jpg" },
 ];
 
-const work = (file: string) => `/images/works/${file}`;
-
 export const projects = [
   {
     title: "หมู่บ้านปัญญาอินทรา",
@@ -123,11 +122,11 @@ export const projects = [
     alt: "ช่างล้างแอร์และอบโอโซนที่หมู่บ้านนาราสิริ",
     description: "ล้างแอร์และอบโอโซนในบ้านพัก",
     images: [
-      work("LINE_ALBUM_ล้างแอร์+อบโอโซน หมู่บ้านนาราสิริ-กรุง.jpg"),
-      work("LINE_ALBUM_ล้างแอร์+อบโอโซน หมู่บ้านนาราสิริ-กรุง2.jpg"),
-      work("LINE_ALBUM_ล้างแอร์+อบโอโซน หมู่บ้านนาราสิริ-กรุง3.jpg"),
-      work("LINE_ALBUM_ล้างแอร์+อบโอโซน หมู่บ้านนาราสิริ-กรุง4.jpg"),
-      work("LINE_ALBUM_ล้างแอร์+อบโอโซน หมู่บ้านนาราสิริ-กรุง5.jpg"),
+      work("LINE_ALBUM_ล้างแอร์-อบโอโซน หมู่บ้านนาราสิริ-กรุง.jpg"),
+      work("LINE_ALBUM_ล้างแอร์-อบโอโซน หมู่บ้านนาราสิริ-กรุง2.jpg"),
+      work("LINE_ALBUM_ล้างแอร์-อบโอโซน หมู่บ้านนาราสิริ-กรุง3.jpg"),
+      work("LINE_ALBUM_ล้างแอร์-อบโอโซน หมู่บ้านนาราสิริ-กรุง4.jpg"),
+      work("LINE_ALBUM_ล้างแอร์-อบโอโซน หมู่บ้านนาราสิริ-กรุง5.jpg"),
     ],
   },
   {
