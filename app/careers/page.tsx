@@ -60,7 +60,7 @@ export default function Careers() {
       <section className="appoint">
         <div className="container appoint-inner">
           <h2><Icon name="phone" />สนใจติดต่อ คุณโอ๊ะ</h2>
-          <a className="btn btn-soft" href={`tel:${company.secondaryPhone.replace(/-/g, "")}`}>{company.secondaryPhone}</a>
+          <a className="btn btn-soft" href={`tel:${company.phone.replace(/-/g, "")}`}>{company.phone}</a>
         </div>
       </section>
     </main>

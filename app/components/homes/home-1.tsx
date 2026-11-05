@@ -10,7 +10,7 @@ export function Home1() {
   return (
     <main>
       <section className="hero">
-        <Image src="/images/mg70172.png" alt="" fill priority sizes="100vw" className="hero-img" />
+        <Image src="/images/HBG-7789.png" alt="" fill priority sizes="100vw" className="hero-img" />
         <div className="hero-overlay" />
         <div className="container hero-copy">
           <div>
@@ -104,6 +104,7 @@ export function Home1() {
                   <span>เริ่มต้น</span>
                   <strong>{offer.price.toLocaleString("th-TH")}</strong>
                   <span>บาท {offer.unit}</span>
+                  <span>ไม่เกิน 24000 BTU</span>
                 </p>
                 <Link className="btn" href="/contact">นัดหมายบริการ</Link>
               </article>

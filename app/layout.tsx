@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Suspense } from "react";
 import { Noto_Sans_Thai } from "next/font/google";
 import Header from "./components/header";
 import Footer from "./components/footer";
@@ -23,9 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="th" className={sans.className}>
       <body>
         <a className="skip-link" href="#content">ข้ามไปเนื้อหา</a>
-        <Suspense fallback={<div className="site-header is-solid" />}>
-          <Header />
-        </Suspense>
+        <Header />
         <div id="content">{children}</div>
         <Footer />
         <ScrollTop />

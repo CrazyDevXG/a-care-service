@@ -37,8 +37,8 @@ export default function Footer() {
         </div>
         <div className="footer-contact">
           <h2>ติดต่อทีมงาน</h2>
-          <a className="footer-phone" href="tel:0996194691"><Icon name="phone" />{company.phone}</a>
-          <a className="footer-phone-sub" href="tel:0981517561">{company.secondaryPhone}</a>
+          <a className="footer-phone" href={`tel:${company.phone.replace(/-/g, "")}`}><Icon name="phone" />{company.phone}</a>
+          <a className="footer-phone-sub" href={`tel:${company.secondaryPhone.replace(/-/g, "")}`}>{company.secondaryPhone}</a>
           <p><Icon name="pin" /><span><strong>ที่ตั้งสำนักงาน</strong>{company.address}</span></p>
           <p><Icon name="mail" /><span><strong>ส่งข้อความ</strong><a href={`mailto:${company.email}`}>{company.email}</a></span></p>
         </div>

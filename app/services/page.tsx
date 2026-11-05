@@ -21,7 +21,7 @@ export default function ServicesPage() {
             <h2>คู่ดูแลระบบปรับอากาศ ตั้งแต่ล้าง ซ่อม ติดตั้ง จนถึงบำรุงรักษา</h2>
             {services.map((service) => (
               <article className="service-block" id={service.slug} key={service.slug}>
-                <Image src={service.image} alt={service.imageAlt} width={860} height={420} />
+                <Image src={service.image} alt={service.imageAlt} width={860} height={480} />
                 <div>
                   <span className="reason-icon"><Icon name={service.icon} /></span>
                   <h3>{service.title}</h3>

@@ -1,8 +1,8 @@
 
 export const company = {
   name: "บริษัท เอ-แคร์ เซอร์วิส จำกัด",
-  phone: "099-619-4691",
-  secondaryPhone: "098-151-7561",
+  phone: "098-151-7561",
+  secondaryPhone: "099-619-4691",
   email: "acareservice@hotmail.com",
   address: "55/709 หมู่ 5 ตำบลลาดสวาย อำเภอลำลูกกา จังหวัดปทุมธานี 12150",
   facebookUrl: "https://m.facebook.com/acareserviceth",
@@ -14,7 +14,7 @@ const work = (file: string) => `/images/works/${file}`;
 
 export const photos = {
   panyaHall: photo("mg70172.png"),
-  cleanAirs: photo("mg70178.png"),
+  cleanAirs: photo("BG_009_781.jpg"),
   panyaCrew: photo("LINE_ALBUM_ล้างแอร์ หมู่บ้านปัญญาอินทรา_261011_3.jpg"),
   panyaShirt: photo("LINE_ALBUM_ล้างแอร์ หมู่บ้านปัญญาอินทรา_261011_2.jpg"),
   wirelessHome: photo("LINE_ALBUM_ล้างแอร์บ้านลูกค้า ถ.วิทยุ_261011_1.jpg"),
@@ -24,11 +24,11 @@ export const photos = {
   officeCheck: photo("LINE_ALBUM_ล้างแอร์ สำนักงาน อาคารไพโรจน์กิจจา บา.jpg"),
   peaOffice: photo("LINE_ALBUM_งานซ่อม-การไฟฟ้าส่วนภูมิภาค_261009_75.jpg"),
   peaCover: work("LINE_ALBUM_งานซ่อม-การไฟฟ้าส่วนภูมิภาค_261009_12.jpg"),
-  peaRepair: photo("mg70170.png"),
+  peaRepair: photo("BG_009_783.jpg"),
   peaUnits: photo("LINE_ALBUM_งานซ่อม-การไฟฟ้าส่วนภูมิภาค_261009_77.jpg"),
   factoryJob: photo("LINE_ALBUM_งานรื้อถอนติดตั้งแอร์ โรงงาน จ.ปทุมธาน5.jpg"),
-  carrierTeam: photo("mg70175.png"),
-  maintenace: photo("mg70176.png"),
+  carrierTeam: photo("BG_009_782.jpg"),
+  maintenace: photo("BG_009_785.jpg"),
   prosecutorTeam: photo("LINE_ALBUM_งานซ่อมและล้างแอร์ สนง.อัยการ คลอง 6_261009_2.jpg"),
 };
 
@@ -70,8 +70,9 @@ export const services = [
 export const homeServices = [services[0], services[1], services[2]];
 
 export const offers = [
-  { title: "บริการล้างแอร์บ้านติดผนัง", price: 800, unit: "ต่อเครื่อง" },
-  { title: "บริการล้างแอร์สำนักงานออฟฟิศ 2-4 ตัว", price: 1000, unit: "ต่อเครื่อง" },
+  { title: "แอร์ติดผนัง", price: 500, unit: "ต่อเครื่อง" },
+  { title: "แอร์แขวน", price: 900, unit: "ต่อเครื่อง" },
+  { title: "แอร์สี่ทิศทาง", price: 1200, unit: "ต่อเครื่อง" },
 ];
 
 export const reasons = [
@@ -106,6 +107,33 @@ export const brands = [
 ];
 
 export const projects = [
+  {
+    title: "สำนักงาน การไฟฟ้าส่วนภูมิภาค",
+    category: "หน่วยงานราชการ",
+    alt: "ช่างซ่อมแอร์ที่สำนักงานการไฟฟ้าส่วนภูมิภาค",
+    description: "ซ่อมเครื่องปรับอากาศในสำนักงาน",
+    images: [
+      work("LINE_ALBUM_ซ่อมแอร์ การไฟฟ้าส่วนภูมิภาค (สำนักงาน.jpg"),
+      work("LINE_ALBUM_ซ่อมแอร์ การไฟฟ้าส่วนภูมิภาค2 (สำนักงาน.jpg"),
+      work("LINE_ALBUM_ซ่อมแอร์ การไฟฟ้าส่วนภูมิภาค3 (สำนักงาน.jpg"),
+      work("LINE_ALBUM_ซ่อมแอร์ การไฟฟ้าส่วนภูมิภาค4 (สำนักงาน.jpg"),
+    ],
+  },
+  {
+    title: "ระบบ VRV ปทุมธานี",
+    category: "สำนักงาน",
+    alt: "ช่างล้างแอร์คาสเซ็ตระบบ VRV ที่ปทุมธานี",
+    description: "ล้างแอร์ระบบ VRV",
+    images: [
+      work("LINE_ALBUM_ล้างแอร์ระบบ VRV ปทุมธานี_261105_1.jpg"),
+      work("LINE_ALBUM_ล้างแอร์ระบบ VRV ปทุมธานี_261105_2.jpg"),
+      work("LINE_ALBUM_ล้างแอร์ระบบ VRV ปทุมธานี_261105_3.jpg"),
+      work("LINE_ALBUM_ล้างแอร์ระบบ VRV ปทุมธานี_261105_4.jpg"),
+      work("LINE_ALBUM_ล้างแอร์ระบบ VRV ปทุมธานี_261105_5.jpg"),
+      work("LINE_ALBUM_ล้างแอร์ระบบ VRV ปทุมธานี_261105_6.jpg"),
+      work("LINE_ALBUM_ล้างแอร์ระบบ VRV ปทุมธานี_261105_7.jpg"),
+    ],
+  },
   {
     title: "หมู่บ้านปัญญาอินทรา",
     category: "ที่พักอาศัย",

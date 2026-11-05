@@ -17,8 +17,8 @@ export default function Contact() {
               <span className="reason-icon"><Icon name="phone" /></span>
               <h2>โทรหาเรา</h2>
               <p>พูดคุยและนัดหมายกับทีมงาน</p>
-              <a className="channel-phone" href="tel:0996194691">{company.phone}</a>
-              <a className="channel-sub" href="tel:0981517561">{company.secondaryPhone}</a>
+              <a className="channel-phone" href={`tel:${company.phone.replace(/-/g, "")}`}>{company.phone}</a>
+              <a className="channel-sub" href={`tel:${company.secondaryPhone.replace(/-/g, "")}`}>{company.secondaryPhone}</a>
             </article>
             <article className="channel" id="facebook">
               <span className="reason-icon"><Icon name="facebook" /></span>
@@ -76,7 +76,7 @@ export default function Contact() {
               </a>
             </aside>
           </div>
-          <p className="form-side-note">หากต้องการคุยกับทีมงานทันที โทร <Link href="tel:0996194691">{company.phone}</Link></p>
+          <p className="form-side-note">หากต้องการคุยกับทีมงานทันที โทร <Link href={`tel:${company.phone.replace(/-/g, "")}`}>{company.phone}</Link></p>
         </div>
       </section>
     </main>
